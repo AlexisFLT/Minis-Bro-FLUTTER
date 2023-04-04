@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Nav(),
     );
   }
 }
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class Nav extends StatelessWidget {
+  const Nav({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +62,7 @@ class Home extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
-          ListTile(
+          ExpansionTile(
             title: Text(
               "Galerie",
               style: GoogleFonts.cormorantUpright(
@@ -70,12 +70,56 @@ class Home extends StatelessWidget {
                 fontSize: 20,
               ),
             ),
-            onTap: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => const Galerie()),
-              );
-            },
+            children: [
+              ListTile(
+                title: Text(
+                  "A Song of Ice And Fire",
+                  style: GoogleFonts.cormorantUpright(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Text(
+                  "Marvel Crisis Protocol",
+                  style: GoogleFonts.cormorantUpright(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Text(
+                  "Star Wars Legion",
+                  style: GoogleFonts.cormorantUpright(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Text(
+                  "Figurines Diverses",
+                  style: GoogleFonts.cormorantUpright(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ],
           ),
           ListTile(
             title: Text(

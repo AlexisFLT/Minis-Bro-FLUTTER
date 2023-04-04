@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:playground/Home.dart';
+import 'package:playground/nav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
               backgroundColor: const Color.fromRGBO(0, 144, 99, 56),
               title: const Text(""),
             ),
-            drawer: const Home(),
+            drawer: const Nav(),
             body: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
