@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:playground/about.dart';
 import 'package:playground/nav.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(title: "Minis&Bros", home: Main()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Main extends StatelessWidget {
+  const Main({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,12 @@ class MyApp extends StatelessWidget {
                     width: 350,
                   ),
                   FloatingActionButton.large(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const About()));
+                    },
                     backgroundColor: Colors.transparent,
                     elevation: 0.0,
                     child: const Icon(

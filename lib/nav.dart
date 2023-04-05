@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:playground/galerie.dart';
+import 'package:playground/about.dart';
 
 void main() => runApp(const MyApp());
 
