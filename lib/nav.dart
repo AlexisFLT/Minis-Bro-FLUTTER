@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:playground/about.dart';
+import 'package:playground/home.dart';
 
 void main() => runApp(const MyApp());
 
@@ -47,7 +48,8 @@ class Nav extends StatelessWidget {
               ),
             ),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const Home()));
             },
           ),
           ListTile(
@@ -59,7 +61,8 @@ class Nav extends StatelessWidget {
               ),
             ),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const About()));
             },
           ),
           ExpansionTile(
