@@ -23,6 +23,7 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             backgroundColor: const Color.fromARGB(202, 255, 255, 255),
             appBar: AppBar(
@@ -39,8 +40,8 @@ class About extends StatelessWidget {
                     child: Text(
                       "À Propos",
                       style: GoogleFonts.cormorantUpright(
-                        fontWeight: FontWeight.bold,
                         fontSize: 30,
+                        color: const Color.fromRGBO(0, 144, 99, 56),
                       ),
                     ),
                   ),
@@ -48,7 +49,7 @@ class About extends StatelessWidget {
                       padding:
                           const EdgeInsets.only(top: 20, left: 20, right: 20),
                       child: Text(
-                        "Je suis Alexis, un amateur et passionné de peinture sur figurines. Je peins simplement à mon niveau avec pour objectif de parfaire les techniques. Je posséde également une imprimante 3D (pla) qui me permet d'imprimer décors et autres éléments afin d'égayer les socles et les tables de jeux. Je peins principalement des figurines A Song of Ice and Fire miniatures, Marvel Crisis Protocol, Star Wars Legion.",
+                        "Je suis Alexis, un amateur et passionné de peinture sur figurines. Je peins simplement à mon niveau avec pour objectif de parfaire les techniques. Je posséde une imprimante 3D (pla) qui me permet d'imprimer décors et autres éléments afin d'égayer les socles et les tables de jeux. Je peins principalement des figurines A Song of Ice and Fire miniatures, Marvel Crisis Protocol, Star Wars Legion.",
                         style: GoogleFonts.cormorantUpright(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,

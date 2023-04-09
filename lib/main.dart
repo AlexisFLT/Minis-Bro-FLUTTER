@@ -12,6 +12,7 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             backgroundColor: const Color.fromARGB(202, 255, 255, 255),
             appBar: AppBar(
