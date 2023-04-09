@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -54,6 +55,24 @@ dev_dependencies:
 flutter:
   assets:
     - assets/LogoMinisMain.png
+
+    #MCP
+    ###Guardians
+
+    - assets/mcp/guard/Groot.png
+    - assets/mcp/guard/rocket1.png
+    - assets/mcp/guard/rocket2.png
+    - assets/mcp/guard/starlordB.png
+    - assets/mcp/guard/starlordF.png
+
+    #MCPCards
+    ###Guardians
+    - assets/mcp/cards/guard/groot.png
+    - assets/mcp/cards/guard/grootKO.png
+    - assets/mcp/cards/guard/rocket.png
+    - assets/mcp/cards/guard/rocketKO.png
+    - assets/mcp/cards/guard/starlord.png
+    - assets/mcp/cards/guard/starlordKO.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

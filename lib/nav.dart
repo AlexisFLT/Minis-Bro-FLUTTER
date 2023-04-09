@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:playground/about.dart';
+import 'package:playground/galleryPages/mcp.dart';
 import 'package:playground/home.dart';
+import 'package:playground/variables/variables.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,8 +13,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
       home: Nav(),
     );
   }
@@ -24,7 +24,7 @@ class Nav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: const Color.fromRGBO(172, 170, 188, 74),
+      backgroundColor: Variables.secondColor,
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -95,7 +95,8 @@ class Nav extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const MCPApp()));
                 },
               ),
               ListTile(
