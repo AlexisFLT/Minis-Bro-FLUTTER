@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:playground/about.dart';
-import 'package:playground/nav.dart';
 
 const bluePara = Color.fromRGBO(0, 144, 99, 56);
 const bgColor = Color.fromARGB(202, 255, 255, 255);
@@ -22,7 +21,6 @@ class Home extends StatelessWidget {
               backgroundColor: const Color.fromRGBO(0, 144, 99, 56),
               title: const Text(""),
             ),
-            drawer: const Nav(),
             body: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
