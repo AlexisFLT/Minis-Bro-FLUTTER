@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playground/about.dart';
-
-const bluePara = Color.fromRGBO(0, 144, 99, 56);
-const bgColor = Color.fromARGB(202, 255, 255, 255);
+import 'package:playground/variables/variables.dart';
 
 void main() {
   runApp(const MaterialApp(title: "Minis&Bros", home: Home()));
@@ -16,9 +14,9 @@ class Home extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            backgroundColor: const Color.fromARGB(202, 255, 255, 255),
+            backgroundColor: Variables.backgroundColor,
             appBar: AppBar(
-              backgroundColor: const Color.fromRGBO(0, 144, 99, 56),
+              backgroundColor: Variables.mainColor,
               title: const Text(""),
             ),
             body: Center(
@@ -40,7 +38,7 @@ class Home extends StatelessWidget {
                     elevation: 0.0,
                     child: const Icon(
                       Icons.touch_app,
-                      color: Color.fromRGBO(0, 144, 99, 56),
+                      color: Variables.mainColor,
                     ),
                   )
                 ],

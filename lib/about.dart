@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:playground/nav.dart';
+import 'package:playground/variables/variables.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       home: About(),
     );
@@ -25,9 +25,9 @@ class About extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            backgroundColor: const Color.fromARGB(202, 255, 255, 255),
+            backgroundColor: Variables.backgroundColor,
             appBar: AppBar(
-              backgroundColor: const Color.fromRGBO(0, 144, 99, 56),
+              backgroundColor: Variables.mainColor,
               title: const Text(""),
             ),
             drawer: const Nav(),
@@ -41,7 +41,7 @@ class About extends StatelessWidget {
                       "À Propos",
                       style: GoogleFonts.cormorantUpright(
                         fontSize: 30,
-                        color: const Color.fromRGBO(0, 144, 99, 56),
+                        color: Variables.mainColor,
                       ),
                     ),
                   ),
@@ -51,9 +51,9 @@ class About extends StatelessWidget {
                       child: Text(
                         "Je suis Alexis, un amateur et passionné de peinture sur figurines. Je peins simplement à mon niveau avec pour objectif de parfaire les techniques. Je posséde une imprimante 3D (pla) qui me permet d'imprimer décors et autres éléments afin d'égayer les socles et les tables de jeux. Je peins principalement des figurines A Song of Ice and Fire miniatures, Marvel Crisis Protocol, Star Wars Legion.",
                         style: GoogleFonts.cormorantUpright(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                        ),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                            color: Variables.textColor),
                         textAlign: TextAlign.justify,
                       )),
                   Padding(
