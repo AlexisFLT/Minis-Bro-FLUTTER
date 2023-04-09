@@ -24,28 +24,25 @@ class Nav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Variables.secondColor,
+      backgroundColor: Variables.textColor,
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-            decoration:
-                const BoxDecoration(color: Color.fromRGBO(0, 144, 99, 56)),
+            decoration: const BoxDecoration(color: Variables.textColor),
             child: Center(
                 child: Text("Minis&Bros - Miniatures",
                     style: GoogleFonts.cormorantUpright(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                    ),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Variables.mainColor),
                     textAlign: TextAlign.center)),
           ),
           ListTile(
             title: Text(
               "Home",
               style: GoogleFonts.cormorantUpright(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
+                  fontSize: 25, color: Variables.mainColor),
             ),
             onTap: () {
               Navigator.push(context,
@@ -56,9 +53,7 @@ class Nav extends StatelessWidget {
             title: Text(
               "About",
               style: GoogleFonts.cormorantUpright(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
+                  fontSize: 25, color: Variables.mainColor),
             ),
             onTap: () {
               Navigator.push(context,
@@ -66,21 +61,22 @@ class Nav extends StatelessWidget {
             },
           ),
           ExpansionTile(
+            iconColor: Variables.mainColor,
+            collapsedIconColor: Variables.mainColor,
+            childrenPadding: const EdgeInsets.only(left: 30),
             title: Text(
               "Galerie",
               style: GoogleFonts.cormorantUpright(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
+                  fontSize: 25, color: Variables.mainColor),
             ),
             children: [
               ListTile(
                 title: Text(
                   "A Song of Ice And Fire",
                   style: GoogleFonts.cormorantUpright(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Variables.secondColor),
                 ),
                 onTap: () {
                   Navigator.pop(context);
@@ -90,9 +86,9 @@ class Nav extends StatelessWidget {
                 title: Text(
                   "Marvel Crisis Protocol",
                   style: GoogleFonts.cormorantUpright(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Variables.secondColor),
                 ),
                 onTap: () {
                   Navigator.push(context,
@@ -103,9 +99,9 @@ class Nav extends StatelessWidget {
                 title: Text(
                   "Star Wars Legion",
                   style: GoogleFonts.cormorantUpright(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Variables.secondColor),
                 ),
                 onTap: () {
                   Navigator.pop(context);
@@ -115,9 +111,9 @@ class Nav extends StatelessWidget {
                 title: Text(
                   "Figurines Diverses",
                   style: GoogleFonts.cormorantUpright(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Variables.secondColor),
                 ),
                 onTap: () {
                   Navigator.pop(context);
@@ -129,9 +125,7 @@ class Nav extends StatelessWidget {
             title: Text(
               "Battle Report",
               style: GoogleFonts.cormorantUpright(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
+                  fontSize: 25, color: Variables.mainColor),
             ),
             onTap: () {
               Navigator.pop(context);
@@ -141,9 +135,7 @@ class Nav extends StatelessWidget {
             title: Text(
               "Contactez moi",
               style: GoogleFonts.cormorantUpright(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
+                  fontSize: 25, color: Variables.mainColor),
             ),
             onTap: () {
               Navigator.pop(context);
