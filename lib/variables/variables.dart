@@ -10,4 +10,5 @@ class Variables {
   static const Color targColor = Color.fromRGBO(107, 6, 6, 42);
   static const Color neutralColor = Color.fromRGBO(83, 66, 51, 33);
   static const Color variousColor = Color.fromRGBO(4, 77, 34, 30);
+  static const Color moreAboutColor = Color.fromRGBO(200, 26, 32, 30);
 }
