@@ -138,6 +138,57 @@ class _MCP extends State<MCP> {
     );
   }
 
+  _showModalMCPCards(int index) {
+    showGeneralDialog(
+      context: context,
+      barrierDismissible: false,
+      barrierLabel: charList[index]['name'],
+      transitionDuration: const Duration(milliseconds: 500),
+      pageBuilder: (
+        context,
+        animation,
+        secondaryAnimation,
+      ) {
+        return Scaffold(
+          appBar: AppBar(
+            backgroundColor: Variables.guardColor,
+            centerTitle: true,
+            leading: IconButton(
+                icon: const Icon(
+                  Icons.close,
+                  color: Variables.backgroundColor,
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                }),
+            title: Text(charList[index]['name'],
+                style: GoogleFonts.cormorantUpright(
+                    fontSize: 30, color: Variables.backgroundColor)),
+          ),
+          backgroundColor: Variables.textColor.withOpacity(0.90),
+          body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Center(
+              child: Padding(
+                  padding: const EdgeInsets.only(left: 2, right: 2, bottom: 20),
+                  child: Image.asset(
+                    charList[index]['healthy'],
+                    width: 500,
+                  )),
+            ),
+            Center(
+              child: Padding(
+                  padding: const EdgeInsets.only(left: 2, right: 2, bottom: 20),
+                  child: Image.asset(
+                    charList[index]['injured'],
+                    width: 500,
+                  )),
+            )
+          ]),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -173,7 +224,14 @@ class _MCP extends State<MCP> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset((charList[index]['minisF'])),
+                      GestureDetector(
+                          onTap: () {
+                            _showModalMCPCards(index);
+                          },
+                          child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: Image.asset((charList[index]['minisF'])),
+                          )),
                       const SizedBox(
                         height: 16.0,
                       ),
