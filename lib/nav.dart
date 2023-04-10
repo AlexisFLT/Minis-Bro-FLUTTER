@@ -41,7 +41,7 @@ class Nav extends StatelessWidget {
           ),
           ListTile(
             title: Text(
-              "Home",
+              "Accueil",
               style: GoogleFonts.cormorantUpright(
                   fontSize: 25, color: Variables.mainColor),
             ),
@@ -52,7 +52,7 @@ class Nav extends StatelessWidget {
           ),
           ListTile(
             title: Text(
-              "About",
+              "À Propos",
               style: GoogleFonts.cormorantUpright(
                   fontSize: 25, color: Variables.mainColor),
             ),
@@ -124,7 +124,7 @@ class Nav extends StatelessWidget {
           ),
           ListTile(
             title: Text(
-              "Battle Report",
+              "Rapport de Bataille",
               style: GoogleFonts.cormorantUpright(
                   fontSize: 25, color: Variables.mainColor),
             ),

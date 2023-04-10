@@ -7,7 +7,7 @@ class ContactPage extends StatefulWidget {
   const ContactPage({super.key});
 
   @override
-  _ContactPageState createState() => _ContactPageState();
+  State<ContactPage> createState() => _ContactPageState();
 }
 
 class _ContactPageState extends State<ContactPage> {
@@ -52,10 +52,11 @@ class _ContactPageState extends State<ContactPage> {
                       height: 16,
                     ),
                     const TextField(
+                      style: TextStyle(fontSize: 15),
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.white,
-                        hintText: "Name",
+                        hintText: "Nom",
                         border: InputBorder.none,
                       ),
                     ),
@@ -63,6 +64,7 @@ class _ContactPageState extends State<ContactPage> {
                       height: 8,
                     ),
                     const TextField(
+                      style: TextStyle(fontSize: 15),
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.white,
@@ -74,6 +76,7 @@ class _ContactPageState extends State<ContactPage> {
                       height: 8,
                     ),
                     const TextField(
+                      style: TextStyle(fontSize: 15),
                       maxLines: 7,
                       decoration: InputDecoration(
                         filled: true,
