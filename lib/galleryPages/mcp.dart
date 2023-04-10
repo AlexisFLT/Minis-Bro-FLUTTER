@@ -193,7 +193,6 @@ class _MCP extends State<MCP> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text(''),
           backgroundColor: Variables.mainColor,
         ),
         backgroundColor: Variables.backgroundColor,
