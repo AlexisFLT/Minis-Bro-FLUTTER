@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_cast
+
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,9 +11,7 @@ class MCPApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MCP(),
-    );
+    return const MCP();
   }
 }
 
@@ -25,30 +25,30 @@ class MCP extends StatefulWidget {
 class _MCP extends State<MCP> {
   List<Map<String, dynamic>> charList = [
     {
-      'id': 1,
-      'name': "Groot",
-      'subname': "I am Groot",
-      'minisF': "assets/mcp/guard/Groot.png",
-      'healthy': "assets/mcp/cards/guard/groot.png",
-      'injured': "assets/mcp/cards/guard/grootKO.png",
+      'id': 1 as int,
+      'name': "Groot" as String,
+      'subname': "I am Groot" as String,
+      'minisF': "assets/mcp/guard/Groot.png" as String,
+      'healthy': "assets/mcp/cards/guard/groot.png" as String,
+      'injured': "assets/mcp/cards/guard/grootKO.png" as String,
     },
     {
-      'id': 2,
+      'id': 2 as int,
       'name': "Rocket Raccoon",
-      'subname': "Rocket Raccoon",
-      'minisF': "assets/mcp/guard/rocket1.png",
-      'minisB': "assets/mcp/guard/rocket2.png",
-      'healthy': "assets/mcp/cards/guard/rocket.png",
-      'injured': "assets/mcp/cards/guard/rocketKO.png",
+      'subname': "Rocket Raccoon" as String,
+      'minisF': "assets/mcp/guard/rocket1.png" as String,
+      'minisB': "assets/mcp/guard/rocket2.png" as String,
+      'healthy': "assets/mcp/cards/guard/rocket.png" as String,
+      'injured': "assets/mcp/cards/guard/rocketKO.png" as String,
     },
     {
-      'id': 3,
+      'id': 3 as int,
       'name': "Star-Lord",
-      'subname': "Peter Quill",
-      'minisF': "assets/mcp/guard/starlordF.png",
-      'minisB': "assets/mcp/guard/starlordB.png",
-      'healthy': "assets/mcp/cards/guard/starlord.png",
-      'injured': "assets/mcp/cards/guard/starlordKO.png",
+      'subname': "Peter Quill" as String,
+      'minisF': "assets/mcp/guard/starlordF.png" as String,
+      'minisB': "assets/mcp/guard/starlordB.png" as String,
+      'healthy': "assets/mcp/cards/guard/starlord.png" as String,
+      'injured': "assets/mcp/cards/guard/starlordKO.png" as String,
     },
   ];
 
