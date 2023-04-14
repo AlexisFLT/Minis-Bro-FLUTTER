@@ -74,6 +74,10 @@ flutter:
     - assets/mcp/cards/guard/starlord.png
     - assets/mcp/cards/guard/starlordKO.png
 
+    #MCPLogo
+    - assets/mcp/mcpLogo/atomic.png
+    - assets/mcp/mcpLogo/mcp.png
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
