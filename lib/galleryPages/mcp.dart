@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:playground/charactersList/mcp/mcpList.dart';
 import 'package:playground/nav.dart';
 import 'package:playground/variables/variables.dart';
 
@@ -23,34 +24,15 @@ class MCP extends StatefulWidget {
 }
 
 class _MCP extends State<MCP> {
-  List<Map<String, dynamic>> charList = [
-    {
-      'id': 1 as int,
-      'name': "Groot" as String,
-      'subname': "I am Groot" as String,
-      'minisF': "assets/mcp/guard/Groot.png" as String,
-      'healthy': "assets/mcp/cards/guard/groot.png" as String,
-      'injured': "assets/mcp/cards/guard/grootKO.png" as String,
-    },
-    {
-      'id': 2 as int,
-      'name': "Rocket Raccoon",
-      'subname': "Rocket Raccoon" as String,
-      'minisF': "assets/mcp/guard/rocket1.png" as String,
-      'minisB': "assets/mcp/guard/rocket2.png" as String,
-      'healthy': "assets/mcp/cards/guard/rocket.png" as String,
-      'injured': "assets/mcp/cards/guard/rocketKO.png" as String,
-    },
-    {
-      'id': 3 as int,
-      'name': "Star-Lord",
-      'subname': "Peter Quill" as String,
-      'minisF': "assets/mcp/guard/starlordF.png" as String,
-      'minisB': "assets/mcp/guard/starlordB.png" as String,
-      'healthy': "assets/mcp/cards/guard/starlord.png" as String,
-      'injured': "assets/mcp/cards/guard/starlordKO.png" as String,
-    },
-  ];
+  late CharactersMCP charactersMCP;
+  late List<Map<String, dynamic>> charList;
+
+  @override
+  void initState() {
+    super.initState();
+    charactersMCP = CharactersMCP();
+    charList = charactersMCP.charList;
+  }
 
   _showModalMCPAbout(context) {
     showGeneralDialog(
