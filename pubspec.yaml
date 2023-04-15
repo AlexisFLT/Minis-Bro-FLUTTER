@@ -78,6 +78,31 @@ flutter:
     - assets/mcp/mcpLogo/atomic.png
     - assets/mcp/mcpLogo/mcp.png
 
+    ###############################################
+
+    #ASOIAF
+    ### Targaryen
+
+    ### Neutral
+
+    #ASOIAFCards
+    ### Targaryen
+
+    ### Neutral
+
+    #ASOIAFLogo
+    - assets/tdf/asoiafLogo/targaryen.png
+    - assets/tdf/asoiafLogo/martell.png
+    - assets/tdf/asoiafLogo/neutral.png
+    - assets/tdf/asoiafLogo/lanni.png
+    - assets/tdf/asoiafLogo/barath.png
+    - assets/tdf/asoiafLogo/ff.png
+    - assets/tdf/asoiafLogo/greyjoy.png
+    - assets/tdf/asoiafLogo/nw.png
+    - assets/tdf/asoiafLogo/stark.png
+    - assets/tdf/asoiafLogo/asoiaf.png
+    - assets/tdf/asoiafLogo/cmonLogo.png
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

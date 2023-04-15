@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:playground/Modal/mcp/mcpabout.dart';
-import 'package:playground/charactersList/mcp/mcpList.dart';
 import 'package:playground/charactersList/mcp/mcpcards.dart';
+import 'package:playground/charactersList/mcp/mcplist.dart';
 import 'package:playground/nav.dart';
 import 'package:playground/variables/variables.dart';
 
