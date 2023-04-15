@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:playground/about.dart';
 import 'package:playground/contact.dart';
+import 'package:playground/galleryPages/asoiaf.dart';
 import 'package:playground/galleryPages/mcp.dart';
 import 'package:playground/home.dart';
 import 'package:playground/variables/variables.dart';
@@ -76,7 +77,8 @@ class Nav extends StatelessWidget {
                       color: Variables.secondColor),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Asoiaf()));
                 },
               ),
               ListTile(
