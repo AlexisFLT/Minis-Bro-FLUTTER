@@ -83,25 +83,99 @@ flutter:
     #ASOIAF
     ### Targaryen
 
+    - "assets/tdf/targ/drogon.png"
+    - "assets/tdf/targ/raeghal.png"
+    - "assets/tdf/targ/viserion.png"
+    - "assets/tdf/targ/greyworm.png"
+    - "assets/tdf/targ/belwas.png"
+    - "assets/tdf/targ/selmy.png"
+    - "assets/tdf/targ/xaro.png"
+    - "assets/tdf/targ/illyrio.png"
+    - "assets/tdf/targ/jorah.png"
+    - "assets/tdf/targ/swordmaster.png"
+    - "assets/tdf/targ/pikemen.png"
+    - "assets/tdf/targ/mercenaries.png"
+    - "assets/tdf/targ/archers.png"
+    - "assets/tdf/targ/hrakkars.png"
+    - "assets/tdf/targ/bloodriders.png"
+    - "assets/tdf/targ/screamer.png"
+
     ### Neutral
+
+    - "assets/tdf/neutral/baelish.png"
+    - "assets/tdf/neutral/tycho.png"
+    - "assets/tdf/neutral/varys.png"
+    - "assets/tdf/neutral/BG.png"
+    - "assets/tdf/neutral/FM.png"
+    - "assets/tdf/neutral/FM2.png"
+    - "assets/tdf/neutral/FMflank.png"
+    - "assets/tdf/neutral/HK2.png"
+    - "assets/tdf/neutral/HK3.png"
+    - "assets/tdf/neutral/HK4.png"
 
     #ASOIAFCards
     ### Targaryen
 
+    - "assets/tdf/cards/Targaryen/drogonRecto.jpg"
+    - "assets/tdf/cards/Targaryen/drogonVerso.jpg"
+    - "assets/tdf/cards/Targaryen/rhaegalRecto.jpg"
+    - "assets/tdf/cards/Targaryen/rhaegalVerso.jpg"
+    - "assets/tdf/cards/Targaryen/viserionRecto.jpg"
+    - "assets/tdf/cards/Targaryen/viserionVerso.jpg"
+    - "assets/tdf/cards/Targaryen/archersRecto.jpg"
+    - "assets/tdf/cards/Targaryen/archersVerso.jpg"
+    - "assets/tdf/cards/Targaryen/mercenariesRecto.jpg"
+    - "assets/tdf/cards/Targaryen/mercenariesVerso.jpg"
+    - "assets/tdf/cards/Targaryen/bloodRecto.jpg"
+    - "assets/tdf/cards/Targaryen/bloodVerso.jpg"
+    - "assets/tdf/cards/Targaryen/swordRecto.jpg"
+    - "assets/tdf/cards/Targaryen/swordVerso.jpg"
+    - "assets/tdf/cards/Targaryen/pikemenRecto.jpg"
+    - "assets/tdf/cards/Targaryen/pikemenVerso.jpg"
+    - "assets/tdf/cards/Targaryen/screamerRecto.jpg"
+    - "assets/tdf/cards/Targaryen/screamerVerso.jpg"
+    - "assets/tdf/cards/Targaryen/hrakRecto.jpg"
+    - "assets/tdf/cards/Targaryen/hrakVerso.jpg"
+    - "assets/tdf/cards/Targaryen/belwasRecto.jpg"
+    - "assets/tdf/cards/Targaryen/belwasVerso.jpg"
+    - "assets/tdf/cards/Targaryen/selmyRecto.jpg"
+    - "assets/tdf/cards/Targaryen/selmyVerso.jpg"
+    - "assets/tdf/cards/Targaryen/greywRecto.jpg"
+    - "assets/tdf/cards/Targaryen/greywVerso.jpg"
+    - "assets/tdf/cards/Targaryen/jorahRecto.jpg"
+    - "assets/tdf/cards/Targaryen/jorahVerso.jpg"
+    - "assets/tdf/cards/Targaryen/xaroRecto.jpg"
+    - "assets/tdf/cards/Targaryen/xaroVerso.jpg"
+    - "assets/tdf/cards/Targaryen/illyrioRecto.jpg"
+    - "assets/tdf/cards/Targaryen/illyrioVerso.jpg"
+
     ### Neutral
 
+    - "assets/tdf/cards/Neutral/bgRecto.jpg"
+    - "assets/tdf/cards/Neutral/bgVerso.jpg"
+    - "assets/tdf/cards/Neutral/hkRecto.jpg"
+    - "assets/tdf/cards/Neutral/hkVerso.jpg"
+    - "assets/tdf/cards/Neutral/fmRecto.jpg"
+    - "assets/tdf/cards/Neutral/fmVerso.jpg"
+    - "assets/tdf/cards/Neutral/petyrRecto.jpg"
+    - "assets/tdf/cards/Neutral/petyrVerso.jpg"
+    - "assets/tdf/cards/Neutral/tychoRecto.jpg"
+    - "assets/tdf/cards/Neutral/tychoVerso.jpg"
+    - "assets/tdf/cards/Neutral/varysRecto.jpg"
+    - "assets/tdf/cards/Neutral/varysVerso.jpg"
+
     #ASOIAFLogo
-    - assets/tdf/asoiafLogo/targaryen.png
-    - assets/tdf/asoiafLogo/martell.png
-    - assets/tdf/asoiafLogo/neutral.png
-    - assets/tdf/asoiafLogo/lanni.png
-    - assets/tdf/asoiafLogo/barath.png
-    - assets/tdf/asoiafLogo/ff.png
-    - assets/tdf/asoiafLogo/greyjoy.png
-    - assets/tdf/asoiafLogo/nw.png
-    - assets/tdf/asoiafLogo/stark.png
-    - assets/tdf/asoiafLogo/asoiaf.png
-    - assets/tdf/asoiafLogo/cmonLogo.png
+    - "assets/tdf/asoiafLogo/targaryen.png"
+    - "assets/tdf/asoiafLogo/martell.png"
+    - "assets/tdf/asoiafLogo/neutral.png"
+    - "assets/tdf/asoiafLogo/lanni.png"
+    - "assets/tdf/asoiafLogo/barath.png"
+    - "assets/tdf/asoiafLogo/ff.png"
+    - "assets/tdf/asoiafLogo/greyjoy.png"
+    - "assets/tdf/asoiafLogo/nw.png"
+    - "assets/tdf/asoiafLogo/stark.png"
+    - "assets/tdf/asoiafLogo/asoiaf.png"
+    - "assets/tdf/asoiafLogo/cmonLogo.png"
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
