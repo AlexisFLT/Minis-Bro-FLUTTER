@@ -31,12 +31,8 @@ class _Targaryen extends State<Targaryen> {
     charListAsoiaf = charactersASOIAF.charListAsoiaf;
   }
 
-  // void _showModalMCPAbout(BuildContext context) {
-  //   showModalMCPAbout(context);
-  // }
-
-  // void _showModalMCPCards(BuildContext context, int index) {
-  //   showModalMCPCards(context, charListAsoiaf[index]);
+  // void _showModalAsoiafCards(BuildContext context, int index) {
+  //   showModalAsoiafCards(context, charListAsoiaf[index]);
   // }
 
   @override
@@ -76,7 +72,7 @@ class _Targaryen extends State<Targaryen> {
                       children: <Widget>[
                         GestureDetector(
                             onTap: () {
-                              // _showModalMCPCards(context, index);
+                              // _showModalAsoiafCards(context, index);
                             },
                             child: MouseRegion(
                               cursor: SystemMouseCursors.click,
